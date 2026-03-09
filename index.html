@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1e3a8a" />
+    <meta name="description" content="A basic installable Progressive Web App test." />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="icons/icon-192.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>PWA</title>
+  </head>
+  <body>
+    <main class="container" aria-live="polite">
+      <h1>PWA</h1>
+      <p class="tagline">A lightweight test Progressive Web App.</p>
+
+      <section class="card">
+        <h2>Ready for install</h2>
+        <p>
+          This app includes a web app manifest, service worker, and an offline fallback page.
+        </p>
+        <button id="installBtn" class="hidden" type="button">Install App</button>
+      </section>
+
+      <p id="status" class="status">Checking app status…</p>
+    </main>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
